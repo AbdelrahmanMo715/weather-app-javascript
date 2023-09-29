@@ -22,7 +22,7 @@ async function checkWeater(city){
     tempDiv.innerHTML = `${Math.round(data.main.temp)}°C`;
     humidityDiv.innerHTML = `${data.main.humidity}%`;
     windSpeedDiv.innerHTML = `${data.wind.speed} Km/h`;
-    WeatherIcon.src = `images/${data.weather[0].main}.png`;
+    WeatherIcon.src = `images/${data.weather[0].main.charAt(0).toLowerCase().concat(data.weather[0].main.slice("1"))}.png`;
     weatherDiv.style.display = "block";
     errorDiv.style.display = "none";
 }
