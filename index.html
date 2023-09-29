@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather APP</title>
+</head>
+<body class="bg-dark">
+
+    <div class="box">
+        <div class="search">
+            <input type="text" placeholder="Enter City  Name">
+            <button><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="error mt-4">
+            Invalid City Name
+        </div>
+        <div class="weather">
+            <img src="images/clouds.png"class="weather-icon">
+            <h2 class="temp">35°C</h2>
+            <h2 class="city mb-3">Cairo</h2>
+            <div class="details row justify-content-around">
+                <div class="col-5 d-flex">
+                    <img src="images/humidity.png" width="40px" height="40px" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p class="desc">Humidity</p>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-between">
+                    <img src="images/wind.png" alt width="40px" height="40px"="">
+                    <div>
+                        <p class="wind-speed">2.6 Km/h</p>
+                        <p class="desc">wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
